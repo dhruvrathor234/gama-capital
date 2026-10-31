@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-primary: #080A0F;
+    --bg-secondary: #11151D;
+    --bg-card: #141923;
+    --accent-gold: #C6A76A;
+    --accent-gold-light: #DFC48A;
+    --accent-silver: #C4CAD4;
+    --border-subtle: rgba(198, 167, 106, 0.15);
+    --border-hairline: rgba(255, 255, 255, 0.07);
+  }
+
+  body {
+    background-color: #080A0F;
+    color: #E2E8F0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Custom scrollbar for institutional feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2634;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A76A;
+}
+
+/* Tabular figures for financial numbers */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-family: 'JetBrains Mono', monospace;
+}
+

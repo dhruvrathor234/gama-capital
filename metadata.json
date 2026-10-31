@@ -1,0 +1,6 @@
+{
+  "name": "GAMA CAPITAL",
+  "description": "Institutional Trading, Quantitative Strategies, and Capital Solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
