@@ -165,10 +165,73 @@ export const PlansSection: React.FC<PlansSectionProps> = ({ onSelectPlan }) => {
           })}
         </div>
 
+        {/* Capital Allocation & Target Objective Framework Box */}
+        <div className="mt-16 bg-[#11151D] border border-[#C6A76A]/40 p-8 sm:p-10 rounded-sm shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-radial from-[#C6A76A]/10 to-transparent pointer-events-none" />
+
+          <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 pb-8 border-b border-white/10">
+            <div>
+              <div className="flex items-center gap-2.5 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#C6A76A]" />
+                <span className="text-xs uppercase font-mono tracking-[0.2em] text-[#C6A76A]">
+                  Capital Strategy & Target Objectives
+                </span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-light text-white tracking-tight">
+                Quantitative Alpha & <span className="font-semibold text-[#C6A76A]">Performance Model</span>
+              </h3>
+            </div>
+
+            <button
+              onClick={() => onSelectPlan('Strategic Capital Partner')}
+              className="group inline-flex items-center gap-2 px-6 py-3 text-xs font-semibold uppercase tracking-wider text-[#080A0F] bg-gradient-to-r from-[#EAD8AC] via-[#C6A76A] to-[#C6A76A] rounded-sm hover:brightness-110 active:scale-[0.98] transition-all shadow-lg shadow-[#C6A76A]/20 whitespace-nowrap"
+            >
+              <span>Get In Touch With Our Desk</span>
+              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+            </button>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div className="md:col-span-8 space-y-4">
+              <div className="p-4 bg-[#080A0F] border border-white/10 rounded-sm">
+                <span className="text-xs font-mono uppercase text-[#C6A76A] block mb-1">
+                  Target Return Objective (Non-Guaranteed)
+                </span>
+                <p className="text-sm text-white font-light leading-relaxed">
+                  While <strong className="text-white font-medium">fixed returns are strictly not guaranteed</strong> and financial markets involve inherent risk, our quantitative algorithmic strategies and risk-managed trading frameworks are architected with an objective to generate <strong className="text-[#C6A76A] font-semibold">approx. 4% to 5% monthly returns on capital</strong> during favorable liquidity and market regimes.
+                </p>
+              </div>
+
+              <p className="text-xs text-[#C4CAD4]/80 leading-relaxed font-light">
+                Every capital collaboration is tailored to the counterparty’s risk tolerance, drawdown parameters, and jurisdiction eligibility. We invite strategic partners, institutions, and high-net-worth desks to initiate a private consultation to examine our empirical models, backtested metrics, and risk mitigation protocols.
+              </p>
+            </div>
+
+            <div className="md:col-span-4 bg-[#080A0F] p-6 border border-white/5 rounded-sm space-y-3 font-mono text-xs">
+              <div className="flex justify-between pb-2 border-b border-white/5">
+                <span className="text-white/40">Fixed Guarantee:</span>
+                <span className="text-rose-400 font-medium">None (Zero Promise)</span>
+              </div>
+              <div className="flex justify-between pb-2 border-b border-white/5">
+                <span className="text-white/40">Target Model Horizon:</span>
+                <span className="text-[#C6A76A] font-medium">~4% – 5% / Month</span>
+              </div>
+              <div className="flex justify-between pb-2 border-b border-white/5">
+                <span className="text-white/40">Risk Management:</span>
+                <span className="text-white">Strict Pre-Trade Limits</span>
+              </div>
+              <div className="flex justify-between pt-1">
+                <span className="text-white/40">Engagement:</span>
+                <span className="text-emerald-400 font-medium">Custom / Bilateral</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Institutional Integrity Reminder */}
         <div className="mt-12 text-center">
-          <p className="text-xs text-[#C4CAD4]/60 max-w-2xl mx-auto font-light">
-            GAMA CAPITAL does not offer retail investment accounts or solicit public deposits. All partnerships are evaluated on strategic alignment, technical synergy, and regulatory qualification.
+          <p className="text-xs text-[#C4CAD4]/60 max-w-3xl mx-auto font-light">
+            GAMA CAPITAL operates on disciplined quantitative science. Past performance and statistical simulation targets are not indicators of guaranteed future results. Capital allocation is subject to accredited qualification and risk disclosure acknowledgement.
           </p>
         </div>
       </div>
